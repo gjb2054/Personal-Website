@@ -1,10 +1,13 @@
-import { Routes, Route, BrowserRouter as Switch } from 'react-router-dom'
+import { Routes, Route, BrowserRouter as Switch } from 'react-router-dom';
+import App from './App';
 
 
-function Nav() {
+function Router() {
     <Switch>
-        <Route path="/" element={<App />}>
-        </Route>
+        <Routes>
+            <Route path="/" element={<App />}>
+            </Route>
+        </Routes>
     </Switch>
 }
 
