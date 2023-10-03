@@ -1,14 +1,26 @@
-
+import { Link } from "react-router-dom";
+import './Nav.css';
 
 function Nav() {
-    return (
-        <div>
-            <a href="/">Home</a>
-            <a href="/Experiences">Experiences</a>
-            <a href="/Projects">Projects</a>
-            <a href="/Resume">Resume</a>
-            <a href="/Contact">Contact</a>
+    return (  
+      <>
+        <div className="navbar">
+          <nav>
+                <Link to="/">Home</Link>
+
+                <Link to="/Experiences">Experiences</Link>
+
+                <Link to="/Projects">Projects</Link>
+
+                <Link to="/Resume">Resume</Link>
+
+                <Link to="/Contact">Contact</Link>
+
+          </nav>
+          <div className="line-divider" />
         </div>
+        
+      </>
     )
 }
 

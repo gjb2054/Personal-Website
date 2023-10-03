@@ -1,14 +1,14 @@
-import { Routes, Route, BrowserRouter as Switch } from 'react-router-dom';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import App from './App';
 
-
 function Router() {
-    <Switch>
-        <Routes>
-            <Route path="/" element={<App />}>
-            </Route>
-        </Routes>
-    </Switch>
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<App />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default Router;
